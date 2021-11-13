@@ -1,0 +1,200 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body onload="foo()">
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark  py-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex">
+                    
+                        <img src="images/logo@2x.png" alt="" class=" mr-2 ">
+                    
+                    <div>
+                        <h6>Weather</h6>
+                        <small>tagline goes here</small>
+                    </div>
+                </div>
+
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link mr-2  home" href="#" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-2  text-white" href="#" >News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-2 text-white" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-2 text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="middle py-4">
+            <div class="container">
+                <div class="buttonIn py-5">
+                    <input type="text" class="form-control middle-input" placeholder="Find your location..." onkeyup = "getLocation(this.value)" id="locInp">
+                    <button class="find btn btn-primary"> Find</button>
+                </div>
+            </div>
+    </div>
+    <div class="middle-bottom">
+        <div class="container ">
+            <div class="row pb-5">
+                <div class="col-lg-4 text-white middle-left above ">
+                    <div class="row justify-content-between align-items-center top-left">
+                        <h6 class="ml-2" id="tDay">
+                            
+                        </h6>
+                        <h6 class="mr-2" id="DateOfToday">
+                            
+                        </h6>
+                    </div>
+                    <h5 class="text-start my-4 " id="loc">
+                        
+                    </h5>
+                    <div class="row align-items-center ml-1 ">
+                        <p class="display-1 font-weight-bold mb-4 " id="maxTemp">
+                           
+                        </p>
+                        <img id="firstImg">
+
+                    </div>
+                    
+                    <small class="clear mt-1" id="status"></small>
+                    <div class="row my-4 ">
+                        <div class="ml-3">
+                            <i class="fas fa-umbrella fa-lg "></i>
+                            <span id="rain"></span>
+                        </div>
+                        <div class="ml-4">
+                            <i class="fas fa-wind fa-lg "></i>
+                            <span id="windd"></span>
+                        </div>
+                        <div class="ml-4">
+                            <i class="far fa-compass fa-lg "></i>
+                            <span id="windDirection"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center middle-middel above">
+                    <div class=" row  top-middle ">
+                        <p class="text-white m-auto" id="tDay1"></p>
+                    </div>
+                    <div class="mt-5">
+                        <img id="secondImg">
+                    </div>
+                    <div class="mb-4 mt-3">
+                        <h3 class="text-white" id="maxTemp1">
+                            
+                        </h3>
+                        <span class="text-white" id="minTemp1">
+                            
+                        </span>
+                    </div>
+                    <div class="my-3">
+                        <small class="clear " id="status1"></small>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 text-center middle-left above">
+                    <div class=" row  top-left ">
+                        <p class="text-white m-auto" id="tDay2"></p>
+                    </div>
+                    <div class="mt-5">
+                        <img id="thirdImg">
+                    </div>
+                    <div class="mb-4 mt-3">
+                        <h3 class="text-white" id="maxTemp2">
+                            
+                        </h3>
+                        <span class="text-white" id="minTemp2">
+                            
+                        </span>
+                    </div>
+                    <div class="my-3">
+                        <small class="clear " id="status2"></small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<footer>
+    <div class=" py-4">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="buttonIn py-5 col-lg-8 ">
+                    <input type="text" class="form-control middle-input" placeholder="Enter your Email to subscribe...">
+                    <button class="sub-btn btn btn-primary">Subscribe</button>
+                </div>
+                <div class="row col-lg-4">
+                    <div class="fontaw">
+                        <i class="fab fa-facebook-f  fa-lg"></i>
+                    </div>
+                    <div class="fontaw">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </div>
+                    <div class="fontaw">
+                        <i class="fab fa-google-plus-g fa-lg"></i>
+                    </div>
+                    <div class="fontaw">
+                        <i class="fab fa-pinterest-p fa-lg"></i>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <p class="text-muted">
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </p>
+           
+            
+        </div>
+</div>
+</footer>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/first.js"></script>
+</body>
+
+</html>
