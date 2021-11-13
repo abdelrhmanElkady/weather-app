@@ -25,7 +25,7 @@ var stats2 = document.getElementById("status2")
 
 
 function foo(){
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=c8a897c503614766b39220025211209&q=cairo&days=3&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=c8a897c503614766b39220025211209&q=cairo&days=3&aqi=no&alerts=no`)
     .then(response =>{ 
 
         return response.json()
@@ -61,7 +61,7 @@ function foo(){
 
 
 function  getLocation(LocationName){
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=c8a897c503614766b39220025211209&q=${LocationName}&days=3&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=c8a897c503614766b39220025211209&q=${LocationName}&days=3&aqi=no&alerts=no`)
     .then(response =>{ 
 
         return response.json()
